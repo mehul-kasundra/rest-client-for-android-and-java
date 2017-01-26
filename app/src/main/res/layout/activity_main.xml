@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.agileinfoways.demo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <!--Country code-->
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_country_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/str_country_code"
+            android:maxLength="3"
+            android:textColor="@android:color/black" />
+
+        <!--Contact Number-->
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_contact_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="@string/str_contact_number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textColor="@android:color/black" />
+
+        <!--get pin button-->
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_get_pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="@string/str_get_pin" />
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_pin_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/str_pin"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <!--pin-->
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_pin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_pin_title"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <!--website-->
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:autoLink="web"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/str_website"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="15sp" />
+
+</RelativeLayout>

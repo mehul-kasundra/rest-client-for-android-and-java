@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">Demo</string>
+    <string name="str_pin">Pin</string>
+    <string name="str_website">http://www.agileinfoways.com/</string>
+    <string name="str_loading">Loading</string>
+    <string name="str_ok">OK</string>
+    <string name="str_time_out">Request time out! Please try again!</string>
+    <string name="str_country_code">Country Code</string>
+    <string name="str_contact_number">Contact Number</string>
+    <string name="str_country_code_validation">Country code must contain 3 character</string>
+    <string name="str_contact_number_validation">Contact number must contain 10 digits</string>
+    <string name="str_get_pin">Get Pin</string>
+
+</resources>
